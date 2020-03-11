@@ -1,0 +1,201 @@
+{
+	"info": {
+		"_postman_id": "8a6a1716-c924-468e-879c-e6678b953e09",
+		"name": "EmployeeExamen",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/api/employee/all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/employee/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"employee",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/employee/byid/5e68260c06118f0ae8a309b4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/employee/byid/5e68260c06118f0ae8a309b4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"employee",
+						"byid",
+						"5e68260c06118f0ae8a309b4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/employee/bycompany/CONJURICA",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "tags",
+							"value": "sint\n",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/employee/bycompany/CONJURICA",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"employee",
+						"bycompany",
+						"CONJURICA"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/employee/bytag/aliquip",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/employee/bytag/aliquip",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"employee",
+						"bytag",
+						"aliquip"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/employee/addtag/:id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "tag",
+							"value": "yes",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/employee/addtag/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"employee",
+						"addtag",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "5e68260c06118f0ae8a309b4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/employee/delete/5c871f24fcc06c827a5818c6",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "tags",
+							"value": "sint\n",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/employee/delete/5c871f24fcc06c827a5818c6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"employee",
+						"delete",
+						"5c871f24fcc06c827a5818c6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/employee/makeolder",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/employee/makeolder",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"employee",
+						"makeolder"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
